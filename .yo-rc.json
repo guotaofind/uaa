@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.motic",
+      "nativeLanguage": "zh-cn"
+    },
+    "jhipsterVersion": "5.5.0",
+    "applicationType": "uaa",
+    "baseName": "uaa",
+    "packageName": "com.motic",
+    "packageFolder": "com/motic",
+    "serverPort": "9999",
+    "authenticationType": "uaa",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZTA5ZTU0ZTU3ODM1NTc3N2Q2OThlNjY5ZmZmMTJiNTgzMjllZjBmOTRkZmYyMTBkM2U4OGEwY2M5MGZkY2NkMDU4NWMyMmI3YWIzMzdhMmJiZWU2OGQzODAxOTI1NjU5NmJiY2EwZTdlNWQ0ZGQ0NjZjOTdiZjkyZGQxNzFkNzg=",
+    "enableTranslation": true,
+    "languages": [
+      "zh-cn",
+      "en"
+    ],
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "clientPackageManager": "npm",
+    "nativeLanguage": "zh-cn",
+    "skipClient": true
+  }
+}
