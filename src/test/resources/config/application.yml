@@ -50,6 +50,7 @@ spring:
             hibernate.cache.use_query_cache: false
             hibernate.generate_statistics: true
             hibernate.hbm2ddl.auto: validate
+            hibernate.jdbc.time_zone: UTC
     liquibase:
         contexts: test
     mail:
@@ -66,10 +67,6 @@ spring:
 server:
     port: 10344
     address: localhost
-
-info:
-    project:
-        version: #project.version#
 
 # ===================================================================
 # JHipster specific properties
@@ -96,7 +93,7 @@ jhipster:
         authentication:
             jwt:
                 # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
-                base64-secret: ZTA5ZTU0ZTU3ODM1NTc3N2Q2OThlNjY5ZmZmMTJiNTgzMjllZjBmOTRkZmYyMTBkM2U4OGEwY2M5MGZkY2NkMDU4NWMyMmI3YWIzMzdhMmJiZWU2OGQzODAxOTI1NjU5NmJiY2EwZTdlNWQ0ZGQ0NjZjOTdiZjkyZGQxNzFkNzg=
+                base64-secret: MjBkNDA2OTRiYmE1YjY1YjM3NjA3YjgzOTcxMTc2NTMyYTMyNDlmYmZjOTk3YjI5ZDQ2YTc5MThlZTA3NjgwNTE3ODE0YjAwZjgwMzY3ZGI5ZTk2M2RjNjM2Nzk5NWJmZGIwNzNkNDc5Mzc0OWVkOTI3YmJjZjgxYTYxY2E2ZDk=
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
         client-authorization:
