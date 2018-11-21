@@ -15,14 +15,14 @@
     "enableHibernateCache": true,
     "websocket": false,
     "databaseType": "sql",
-    "devDatabaseType": "h2Disk",
+    "devDatabaseType": "mssql",
     "prodDatabaseType": "mssql",
     "searchEngine": false,
     "messageBroker": false,
     "serviceDiscoveryType": "eureka",
     "buildTool": "maven",
     "enableSwaggerCodegen": false,
-    "jwtSecretKey": "MTYxNDlhNjg0YjBjZGIwYWZkMmY0ODFkYjgzOGI2Zjg2Nzc1MDlhMmIzYzk2M2JmYjM2MWEyODg1ZTk0MWUzYzdiNzgzYTU0YWMxYzhiZDBjYjEyYWFkZTk4ZmU4OTY3YTk2ZGU2NWFkOTQ2MzMxYjg1NzM2ZTcwZWJhMWE1OWY=",
+    "jwtSecretKey": "YWM5MzllNTdlNTgxMDYxMTRlOTI2NjdhNDU2NzUxZDYxOGQ2MDA0ZDY3YmIxYWMyODk5NjUzMWI2ODYxNGMxNDBhZjM4YzY2Nzg3MzViNDE2OWY1ZTlmNGMxMmMwZTJhZjA5MTRiMDVhNTAxNGI5ZDNlZDA3NTQ2NDU1ZmY5ODU=",
     "testFrameworks": [],
     "jhiPrefix": "jhi",
     "otherModules": [],
@@ -30,8 +30,7 @@
     "clientPackageManager": "npm",
     "nativeLanguage": "zh-cn",
     "languages": [
-      "zh-cn",
-      "en"
+      "zh-cn"
     ],
     "skipClient": true
   }
