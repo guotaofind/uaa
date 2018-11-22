@@ -34,9 +34,9 @@ spring:
             enabled: false
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:sqlserver://localhost:1433;database=uaa
-        username: SA
-        password: yourStrong(!)Password
+        url: jdbc:mysql://localhost:3306/uaa?useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: root
+        password:
         hikari:
             auto-commit: false
             data-source-properties:
@@ -45,8 +45,8 @@ spring:
                 prepStmtCacheSqlLimit: 2048
                 useServerPrepStmts: true
     jpa:
-        database-platform: org.hibernate.dialect.SQLServer2012Dialect
-        database: SQL_SERVER
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+        database: MYSQL
         show-sql: false
         properties:
             hibernate.id.new_generator_mappings: true
@@ -69,7 +69,7 @@ spring:
         cache: true
     sleuth:
         sampler:
-            probability: 1 # report 100% of traces
+            percentage: 1 # report 100% of traces
     zipkin: # Use the "zipkin" Maven profile to have the Spring Cloud Zipkin dependencies
         base-url: http://localhost:9411
         enabled: false
@@ -138,8 +138,6 @@ jhipster:
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx:
             enabled: true
-        prometheus:
-            enabled: false #expose metrics via prometheus
         logs: # Reports Dropwizard metrics in the logs
             enabled: false
             report-frequency: 60 # in seconds

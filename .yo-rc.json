@@ -4,7 +4,7 @@
       "packageName": "com.motic",
       "nativeLanguage": "zh-cn"
     },
-    "jhipsterVersion": "5.7.0",
+    "jhipsterVersion": "5.4.2",
     "applicationType": "uaa",
     "baseName": "uaa",
     "packageName": "com.motic",
@@ -15,23 +15,23 @@
     "enableHibernateCache": true,
     "websocket": false,
     "databaseType": "sql",
-    "devDatabaseType": "mssql",
-    "prodDatabaseType": "mssql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
     "searchEngine": false,
     "messageBroker": false,
     "serviceDiscoveryType": "eureka",
     "buildTool": "maven",
     "enableSwaggerCodegen": false,
-    "jwtSecretKey": "YWM5MzllNTdlNTgxMDYxMTRlOTI2NjdhNDU2NzUxZDYxOGQ2MDA0ZDY3YmIxYWMyODk5NjUzMWI2ODYxNGMxNDBhZjM4YzY2Nzg3MzViNDE2OWY1ZTlmNGMxMmMwZTJhZjA5MTRiMDVhNTAxNGI5ZDNlZDA3NTQ2NDU1ZmY5ODU=",
+    "jwtSecretKey": "NmEwMzRlYWUwYWRhNDM4NTYzYWM0MTM4NTNkZmE4ZmI0NzJiYTcyMDhkYTc4NmY2ZWFiMmQ4YjMzYjlkMTYxNThhZTM4ZDY2ZGQ4NTNhNGUwNGQ3YjZmMjU3ZjAwNjdkMTdlZDc3MGU0ODFhZTNiNzBhNWI0MmIyM2Y0NjAwZjI=",
+    "enableTranslation": true,
+    "languages": [
+      "zh-cn",
+      "en"
+    ],
     "testFrameworks": [],
     "jhiPrefix": "jhi",
-    "otherModules": [],
-    "enableTranslation": true,
     "clientPackageManager": "npm",
     "nativeLanguage": "zh-cn",
-    "languages": [
-      "zh-cn"
-    ],
     "skipClient": true
   }
 }

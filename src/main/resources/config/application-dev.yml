@@ -39,23 +39,20 @@ spring:
         livereload:
             enabled: false # we use Webpack dev server + BrowserSync for livereload
     jackson:
-        serialization:
-            indent-output: true
+        serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:sqlserver://localhost:1433;database=uaa
-        username: SA
-        password: yourStrong(!)Password
+        url: jdbc:h2:file:./target/h2db/db/uaa;DB_CLOSE_DELAY=-1
+        username: uaa
+        password:
         hikari:
             auto-commit: false
-            data-source-properties:
-                cachePrepStmts: true
-                prepStmtCacheSize: 250
-                prepStmtCacheSqlLimit: 2048
-                useServerPrepStmts: true
+    h2:
+        console:
+            enabled: false
     jpa:
-        database-platform: org.hibernate.dialect.SQLServer2012Dialect
-        database: SQL_SERVER
+        database-platform: io.github.jhipster.domain.util.FixedH2Dialect
+        database: H2
         show-sql: true
         properties:
             hibernate.id.new_generator_mappings: true
@@ -80,7 +77,7 @@ spring:
         cache: false
     sleuth:
         sampler:
-            probability: 1 # report 100% of traces
+            percentage: 1 # report 100% of traces
     zipkin: # Use the "zipkin" Maven profile to have the Spring Cloud Zipkin dependencies
         base-url: http://localhost:9411
         enabled: false
@@ -126,8 +123,6 @@ jhipster:
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx:
             enabled: true
-        prometheus:
-            enabled: false #expose metrics via prometheus
         logs: # Reports Dropwizard metrics in the logs
             enabled: false
             report-frequency: 60 # in seconds
